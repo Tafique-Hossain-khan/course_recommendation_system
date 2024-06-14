@@ -33,9 +33,8 @@ def get_consing_mat(df):
     return cos_sim
 
 
-def extract_fetures(df):
-    course_url = list(df['url'])
+def extract_feature(df):
     course_title = list(df['course_title'])
-    #course_price = list(df['url'])
-
-    return course_url,course_title
+    course_url = list(df['url'])
+    
+    return course_title,course_url
